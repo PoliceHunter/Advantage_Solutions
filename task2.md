@@ -13,6 +13,30 @@
 Пример курл для получения аналогичных данных
 ``` curl https://api.bittrex.com/v3/markets/BTC-USD/orderbook?depth=500 -v  ```
 
+```{ [5 bytes data]
+* Connection state changed (MAX_CONCURRENT_STREAMS == 256)!
+} [5 bytes data]
+< HTTP/2 200
+< date: Fri, 16 Dec 2022 10:43:27 GMT
+< content-type: application/json; charset=utf-8
+< content-length: 54018
+< cache-control: max-age=1
+< last-modified: Fri, 16 Dec 2022 10:43:26 GMT
+< etag: "2abb82f6-f6db-4206-ab49-0aaba7eb2284"
+< sequence: 14380
+< request-id: c4e18bcb-fabf-4b6b-a3b0-43a1cd01263f
+< strict-transport-security: max-age=15768000
+< x-xss-protection: 1; mode=block
+< x-content-type-options: nosniff
+< x-download-options: noopen
+< cf-cache-status: HIT
+< age: 1
+< accept-ranges: bytes
+< set-cookie: __cf_bm=aPCwFYSZr9w7r3VWa_tBCGb6pnXUHXsjHzH3qY86FTQ-1671187407-0-AYar+U95i0VJIpQgXCzebMQIwnMwjZrXnV3NyzBkq+IIiB49HKBFLKNUZGPRsx3aF0Agw2CS/cSq+A6kJm5AEFU=; path=/; expires=Fri, 16-Dec-22 11:13:27 GMT; domain=.bittrex.com; HttpOnly; Secure; SameSite=None
+< server: cloudflare
+< cf-ray: 77a6d1726bad9d9f-DME
+```
+
 
 
 ## 2. Далее происходит подписка на стримы с помощью ws. 
